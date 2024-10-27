@@ -1,8 +1,8 @@
 
-# **Deutsch-Immo-Vision: German Real Estate Price Prediction**
+# **Deutsch Immo Vision: German Apartment Price Prediction**
 
 ## **Project Overview**
-**Deutsch-Immo-Vision** aims to develop a robust machine learning model to predict apartment rental prices across Germany. Using comprehensive real estate data, we explore the influence of features like location, property size, amenities, and energy efficiency on rental prices. This end-to-end project encompasses data processing, feature engineering, model development, and deployment through a RESTful API, making predictions accessible to end-users.
+**Deutsch-Immo-Vision** aims to develop a robust machine learning model to predict apartment rental prices across Germany. Using comprehensive apartment data, we explore the influence of features like location, property size, amenities, and energy efficiency on rental prices. This end-to-end project encompasses data processing, feature engineering, model development, and deployment through a RESTful API, making predictions accessible to end-users.
 
 ## **Objective**
 The primary goal is to create a production-ready model that:
@@ -130,7 +130,7 @@ pytest tests/
 
 The project is under active development, with the following milestones:
 - ✅ Initial Setup and Data Collection
-- ⬜️ Data Preprocessing and Feature Engineering
+- ✅ Data Preprocessing and Feature Engineering
 - ⬜️ Model Development and Evaluation
 - ⬜️ Deployment and API Integration
 
