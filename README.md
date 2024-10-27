@@ -132,7 +132,7 @@ The project is under active development, with the following milestones:
 - ✅ Initial Setup and Data Collection
 - ✅ Data Preprocessing and Feature Engineering
 - ✅ Model Development and Evaluation
-- ⬜️ Deployment and API Integration
+- ✅ Deployment and API Integration
 
 ---
 
