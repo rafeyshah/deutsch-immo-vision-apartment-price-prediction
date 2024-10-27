@@ -71,8 +71,8 @@ class PredictionRequest(BaseModel):
 
 @app.post("/predict")
 async def predict(request: PredictionRequest):
-    # Convert request data to DataFrame
-    input_data = pd.DataFrame([request.dict()])
+    # Convert request data to a DataFrame
+    input_data = pd.DataFrame([request.model_dump()])  # Updated to use model_dump()
 
     # Ensure placeholders are added for missing object columns
     input_data["description"] = "dummy"
