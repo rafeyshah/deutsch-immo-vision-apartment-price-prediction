@@ -1,7 +1,16 @@
-data_path: "data/"
-model_path: "artifacts/"
-hyperparameters:
-  learning_rate: 0.01
-  max_depth: 5
-  n_estimators: 100
-  random_state: 42
+# config.yaml
+
+paths:
+  model: "artifacts/best_XGBoost_model.pkl"
+  data: "data/final_feature_engineered_immo_data.csv"
+
+api:
+  host: "127.0.0.1"
+  port: 8000
+
+model_params:
+  colsample_bytree: 1.0
+  learning_rate: 0.2
+  max_depth: 7
+  n_estimators: 300
+  subsample: 1.0
