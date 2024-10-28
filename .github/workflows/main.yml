@@ -1,4 +1,4 @@
-name: FastAPI CI/CD
+name: FastAPI CI/CD with Render
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'
+        python-version: '3.10'  # Adjust to your project's Python version
 
     - name: Install dependencies
       run: |
@@ -38,11 +38,10 @@ jobs:
     steps:
     - name: Trigger Render deployment
       env:
-        RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
         RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
       run: |
         curl -X POST \
         -H "Authorization: Bearer $RENDER_API_KEY" \
         -H "Accept: application/json" \
         -d "" \
-        https://api.render.com/v1/services/$RENDER_SERVICE_ID/deploys
+        https://api.render.com/v1/services/YOUR_SERVICE_ID/deploys
