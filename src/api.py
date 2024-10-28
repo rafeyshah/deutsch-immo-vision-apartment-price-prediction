@@ -8,6 +8,7 @@ app = FastAPI()
 # Load the trained XGBoost model
 model = joblib.load("artifacts/best_XGBoost_model.pkl")
 
+
 # Define the input schema to match the expected features in the model
 class PredictionRequest(BaseModel):
     regio1: int
@@ -45,9 +46,9 @@ class PredictionRequest(BaseModel):
     livingSpaceRange: int
     regio2: int
     regio3: int
-    description: str = "dummy"       # Placeholder for description
-    facilities: str = "dummy"        # Placeholder for facilities
-    date: str = "2023-01-01"         # Placeholder for date
+    description: str = "dummy"  # Placeholder for description
+    facilities: str = "dummy"  # Placeholder for facilities
+    date: str = "2023-01-01"  # Placeholder for date
     month: int
     year: int
     season: int
@@ -69,6 +70,7 @@ class PredictionRequest(BaseModel):
     petsAllowed_no: int
     petsAllowed_yes: int
 
+
 @app.post("/predict")
 async def predict(request: PredictionRequest):
     # Convert request data to a DataFrame
@@ -80,7 +82,9 @@ async def predict(request: PredictionRequest):
     input_data["date"] = "2023-01-01"
 
     # Drop non-numeric columns before passing to the model
-    input_data = input_data.drop(columns=["description", "facilities", "date"], errors="ignore")
+    input_data = input_data.drop(
+        columns=["description", "facilities", "date"], errors="ignore"
+    )
 
     # Ensure all expected features are present and in the correct order
     model_features = model.get_booster().feature_names

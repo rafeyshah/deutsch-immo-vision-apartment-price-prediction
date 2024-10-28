@@ -6,6 +6,7 @@ from api import app  # Import your FastAPI app instance from api.py
 # Initialize the TestClient with the FastAPI app
 client = TestClient(app)
 
+
 def test_predict_valid_input():
     # A sample valid input that should work with the model
     payload = {
@@ -66,27 +67,28 @@ def test_predict_valid_input():
         "interiorQual_sophisticated": 0,
         "petsAllowed_negotiable": 0,
         "petsAllowed_no": 1,
-        "petsAllowed_yes": 0
+        "petsAllowed_yes": 0,
     }
 
     # Send the POST request with valid input
     response = client.post("/predict", json=payload)
-    
+
     # Check the response status code and structure
     assert response.status_code == 200
     assert "prediction" in response.json()
+
 
 def test_predict_invalid_input():
     # A sample invalid input with missing required fields
     payload = {
         "serviceCharge": 200,
-        "heatingType": 1
+        "heatingType": 1,
         # Missing other required fields
     }
 
     # Send the POST request with invalid input
     response = client.post("/predict", json=payload)
-    
+
     # Check the response for a 422 Unprocessable Entity error due to validation
     assert response.status_code == 422
     assert "detail" in response.json()
