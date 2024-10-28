@@ -6,7 +6,6 @@ from fastapi.responses import RedirectResponse
 import joblib
 import pandas as pd
 import os
-import logging
 
 app = FastAPI()
 
