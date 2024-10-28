@@ -1,7 +1,12 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import RedirectResponse
+
 import joblib
 import pandas as pd
+import os
+import logging
 
 app = FastAPI()
 
@@ -71,10 +76,19 @@ class PredictionRequest(BaseModel):
     petsAllowed_yes: int
 
 
+@app.get("/")
+async def read_root():
+    return RedirectResponse(url="/frontend/index.html")
+
+frontend_path = os.path.join(os.path.dirname(__file__), "../frontend")
+app.mount("/frontend", StaticFiles(directory=frontend_path), name="frontend")
+
+
 @app.post("/predict")
 async def predict(request: PredictionRequest):
     # Convert request data to a DataFrame
-    input_data = pd.DataFrame([request.model_dump()])  # Updated to use model_dump()
+    # Updated to use model_dump()
+    input_data = pd.DataFrame([request.model_dump()])
 
     # Ensure placeholders are added for missing object columns
     input_data["description"] = "dummy"
@@ -95,4 +109,5 @@ async def predict(request: PredictionRequest):
         prediction = float(model.predict(input_data)[0])
         return {"prediction": prediction}
     except Exception as e:
+        print("Hello")
         raise HTTPException(status_code=400, detail=str(e))

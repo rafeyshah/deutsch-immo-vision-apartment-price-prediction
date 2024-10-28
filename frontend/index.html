@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsch Immo Vision - Price Prediction</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Deutsch Immo Vision - Apartment Price Prediction</h1>
+        <p>Enter apartment details to receive a price prediction</p>
+    </header>
+    <main>
+        <form id="predictionForm">
+            <!-- Basic Apartment Info -->
+            <fieldset>
+                <legend>Basic Info</legend>
+                <label for="regio1">Region 1:</label>
+                <input type="number" id="regio1" required>
+
+                <label for="serviceCharge">Service Charge:</label>
+                <input type="number" id="serviceCharge" step="0.01" required>
+
+                <label for="heatingType">Heating Type:</label>
+                <input type="number" id="heatingType" required>
+
+                <label for="newlyConst">Newly Constructed (0 or 1):</label>
+                <input type="number" id="newlyConst" min="0" max="1" required>
+
+                <label for="balcony">Balcony (0 or 1):</label>
+                <input type="number" id="balcony" min="0" max="1" required>
+
+                <label for="picturecount">Picture Count:</label>
+                <input type="number" id="picturecount" required>
+            </fieldset>
+
+            <!-- Additional Features -->
+            <fieldset>
+                <legend>Additional Features</legend>
+                <label for="pricetrend">Price Trend:</label>
+                <input type="number" id="pricetrend" step="0.01">
+
+                <label for="telekomUploadSpeed">Telekom Upload Speed:</label>
+                <input type="number" id="telekomUploadSpeed" step="0.01">
+
+                <label for="yearConstructed">Year Constructed:</label>
+                <input type="number" id="yearConstructed">
+
+                <label for="scoutId">Scout ID:</label>
+                <input type="number" id="scoutId">
+
+                <label for="firingTypes">Firing Types:</label>
+                <input type="number" id="firingTypes">
+
+                <label for="geo_bln">Region Bln:</label>
+                <input type="number" id="geo_bln">
+
+                <label for="cellar">Cellar (0 or 1):</label>
+                <input type="number" id="cellar" min="0" max="1" value="0">
+
+                <label for="yearConstructedRange">Year Constructed Range:</label>
+                <input type="number" id="yearConstructedRange">
+
+                <label for="baseRent">Base Rent:</label>
+                <input type="number" id="baseRent" step="0.01">
+
+                <label for="houseNumber">House Number:</label>
+                <input type="number" id="houseNumber">
+
+                <label for="livingSpace">Living Space:</label>
+                <input type="number" id="livingSpace" step="0.01">
+
+                <label for="geo_krs">Region Krs:</label>
+                <input type="number" id="geo_krs">
+
+                <label for="condition">Condition:</label>
+                <input type="number" id="condition">
+
+                <label for="street">Street:</label>
+                <input type="number" id="street" value="1">
+
+                <label for="streetPlain">Street Plain:</label>
+                <input type="number" id="streetPlain" value="1">
+
+                <label for="lift">Lift (0 or 1):</label>
+                <input type="number" id="lift" min="0" max="1">
+
+                <label for="baseRentRange">Base Rent Range:</label>
+                <input type="number" id="baseRentRange">
+
+                <label for="typeOfFlat">Type of Flat:</label>
+                <input type="number" id="typeOfFlat">
+
+                <label for="geo_plz">Region PLZ:</label>
+                <input type="number" id="geo_plz">
+
+                <label for="noRooms">Number of Rooms:</label>
+                <input type="number" id="noRooms" value="3">
+
+                <label for="thermalChar">Thermal Characteristic:</label>
+                <input type="number" id="thermalChar" step="0.01" value="100.0">
+
+                <label for="floor">Floor:</label>
+                <input type="number" id="floor" value="1">
+
+                <label for="numberOfFloors">Number of Floors:</label>
+                <input type="number" id="numberOfFloors" value="5">
+
+                <label for="noRoomsRange">Room Range:</label>
+                <input type="number" id="noRoomsRange" value="2">
+
+                <label for="garden">Garden (0 or 1):</label>
+                <input type="number" id="garden" min="0" max="1">
+
+                <label for="livingSpaceRange">Living Space Range:</label>
+                <input type="number" id="livingSpaceRange" value="2">
+
+                <label for="regio2">Region 2:</label>
+                <input type="number" id="regio2">
+
+                <label for="regio3">Region 3:</label>
+                <input type="number" id="regio3">
+
+                <label for="hasKitchen">Has Kitchen (0 or 1):</label>
+                <input type="number" id="hasKitchen" min="0" max="1" value="0">
+
+            </fieldset>
+
+            <!-- Description and Facilities -->
+            <fieldset>
+                <legend>Description & Facilities</legend>
+                <label for="description">Description:</label>
+                <textarea id="description"></textarea>
+
+                <label for="facilities">Facilities:</label>
+                <textarea id="facilities"></textarea>
+
+                <label for="description_length">Description Length:</label>
+                <input type="number" id="description_length">
+
+                <label for="facilities_length">Facilities Length:</label>
+                <input type="number" id="facilities_length">
+            </fieldset>
+
+            <!-- Date Information -->
+            <fieldset>
+                <legend>Date Information</legend>
+                <label for="date">Date:</label>
+                <input type="date" id="date" value="2023-01-01">
+
+                <label for="month">Month:</label>
+                <input type="number" id="month" value="1">
+
+                <label for="year">Year:</label>
+                <input type="number" id="year" value="2023">
+
+                <label for="season">Season:</label>
+                <input type="number" id="season" value="1">
+            </fieldset>
+
+            <!-- Calculated Features -->
+            <fieldset>
+                <legend>Calculated Features</legend>
+                <label for="room_size">Room Size:</label>
+                <input type="number" id="room_size" step="0.01">
+
+                <label for="rent_per_sqm">Rent per Sqm:</label>
+                <input type="number" id="rent_per_sqm" step="0.01">
+
+                <label for="price_trend_adjusted_rent">Adjusted Rent:</label>
+                <input type="number" id="price_trend_adjusted_rent" step="0.01">
+
+                <label for="livingSpace_log">Living Space Log:</label>
+                <input type="number" id="livingSpace_log" step="0.01">
+
+                <label for="totalRent_log">Total Rent Log:</label>
+                <input type="number" id="totalRent_log" step="0.01">
+            </fieldset>
+
+            <!-- Telecom and Interior Quality -->
+            <fieldset>
+                <legend>Telecom & Interior Quality</legend>
+                <label for="telekomTvOffer_ONE_YEAR_FREE">Telekom TV Offer One Year Free:</label>
+                <input type="number" id="telekomTvOffer_ONE_YEAR_FREE" min="0" max="1">
+
+                <label for="telekomTvOffer_ON_DEMAND">Telekom TV Offer On Demand:</label>
+                <input type="number" id="telekomTvOffer_ON_DEMAND" min="0" max="1">
+
+                <label for="telekomTvOffer_Unknown">Telekom TV Offer Unknown:</label>
+                <input type="number" id="telekomTvOffer_Unknown" min="0" max="1">
+
+                <label for="interiorQual_luxury">Interior Quality Luxury:</label>
+                <input type="number" id="interiorQual_luxury" min="0" max="1">
+
+                <label for="interiorQual_normal">Interior Quality Normal:</label>
+                <input type="number" id="interiorQual_normal" min="0" max="1">
+
+                <label for="interiorQual_simple">Interior Quality Simple:</label>
+                <input type="number" id="interiorQual_simple" min="0" max="1">
+
+                <label for="interiorQual_sophisticated">Interior Quality Sophisticated:</label>
+                <input type="number" id="interiorQual_sophisticated" min="0" max="1">
+            </fieldset>
+
+            <!-- Pets Allowed -->
+            <fieldset>
+                <legend>Pets Allowed</legend>
+                <label for="petsAllowed_negotiable">Pets Allowed (Negotiable):</label>
+                <input type="number" id="petsAllowed_negotiable" min="0" max="1">
+
+                <label for="petsAllowed_no">Pets Not Allowed:</label>
+                <input type="number" id="petsAllowed_no" min="0" max="1">
+
+                <label for="petsAllowed_yes">Pets Allowed:</label>
+                <input type="number" id="petsAllowed_yes" min="0" max="1">
+            </fieldset>
+
+            <!-- Prediction Button -->
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result"></div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -154,7 +154,7 @@ The project is under active development, with the following milestones:
 - ✅ Data Preprocessing and Feature Engineering
 - ✅ Model Development and Evaluation
 - ✅ Deployment and API Integration
-- ⬜ CI/CD Pipelines
+- ✅ CI/CD Pipelines
 - ⬜ Frontend Development
 ---
 
