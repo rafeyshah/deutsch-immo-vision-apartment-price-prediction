@@ -11,6 +11,27 @@ The primary goal is to create a production-ready model that:
 
 ---
 
+## API
+
+The application is now hosted on Render at [https://deutsch-immo-vision-apartment-price.onrender.com](https://deutsch-immo-vision-apartment-price.onrender.com).
+
+### Endpoints
+
+- **GET** `/`: Returns a welcome message.
+- **POST** `/predict`: Takes apartment details as input and returns the predicted rental price.
+
+### Example Requests
+
+Example request for prediction with JSON data from a file:
+
+```bash
+curl -X POST "https://deutsch-immo-vision-apartment-price.onrender.com/predict" \
+-H "Content-Type: application/json" \
+-d @tests/input.json
+```
+
+---
+
 ## **Project Structure**
 
 The project is organized into the following directories:
@@ -133,7 +154,8 @@ The project is under active development, with the following milestones:
 - ✅ Data Preprocessing and Feature Engineering
 - ✅ Model Development and Evaluation
 - ✅ Deployment and API Integration
-
+- ⬜ CI/CD Pipelines
+- ⬜ Frontend Development
 ---
 
 ## **Contributing**
