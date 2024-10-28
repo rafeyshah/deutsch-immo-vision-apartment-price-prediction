@@ -80,6 +80,7 @@ class PredictionRequest(BaseModel):
 async def read_root():
     return RedirectResponse(url="/frontend/index.html")
 
+
 frontend_path = os.path.join(os.path.dirname(__file__), "../frontend")
 app.mount("/frontend", StaticFiles(directory=frontend_path), name="frontend")
 

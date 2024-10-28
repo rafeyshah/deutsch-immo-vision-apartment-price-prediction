@@ -124,6 +124,12 @@ python main.py
 
 ---
 
+## Dataset
+The dataset used for this project is taken from Kaggle. It contains apartment rental offers in Germany and can be found at the following link:
+[Apartment Rental Offers in Germany](https://www.kaggle.com/datasets/corrieaar/apartment-rental-offers-in-germany)
+
+---
+
 ## **Technologies Used**
 - **Python**: Core language for data processing, modeling, and deployment.
 - **Pandas, Numpy**: Data manipulation and preprocessing.
@@ -155,7 +161,7 @@ The project is under active development, with the following milestones:
 - ✅ Model Development and Evaluation
 - ✅ Deployment and API Integration
 - ✅ CI/CD Pipelines
-- ⬜ Frontend Development
+- ✅ Frontend Development
 ---
 
 ## **Contributing**
