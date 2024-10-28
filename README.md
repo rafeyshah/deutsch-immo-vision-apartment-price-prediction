@@ -135,8 +135,9 @@ The dataset used for this project is taken from Kaggle. It contains apartment re
 - **Pandas, Numpy**: Data manipulation and preprocessing.
 - **Scikit-Learn, XGBoost**: Model development and evaluation.
 - **FastAPI**: API deployment.
-- **Docker**: Containerization for deployment.
+- **GitHub Actions**: CI/CD Pipeplines.
 - **Jupyter Notebooks**: Data exploration and preliminary analysis.
+- **Deployment**: Render Free Hosting.
 
 ---
 
