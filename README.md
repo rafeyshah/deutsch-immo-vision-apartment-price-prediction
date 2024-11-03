@@ -1,13 +1,34 @@
 
-# **Deutsch-Immo-Vision: German Real Estate Price Prediction**
+# **Deutsch Immo Vision: German Apartment Price Prediction**
 
 ## **Project Overview**
-**Deutsch-Immo-Vision** aims to develop a robust machine learning model to predict apartment rental prices across Germany. Using comprehensive real estate data, we explore the influence of features like location, property size, amenities, and energy efficiency on rental prices. This end-to-end project encompasses data processing, feature engineering, model development, and deployment through a RESTful API, making predictions accessible to end-users.
+**Deutsch-Immo-Vision** aims to develop a robust machine learning model to predict apartment rental prices across Germany. Using comprehensive apartment data, we explore the influence of features like location, property size, amenities, and energy efficiency on rental prices. This end-to-end project encompasses data processing, feature engineering, model development, and deployment through a RESTful API, making predictions accessible to end-users.
 
 ## **Objective**
 The primary goal is to create a production-ready model that:
 - Accurately predicts rental prices for German apartments based on detailed property and location features.
 - Provides a scalable, deployable solution accessible via an API.
+
+---
+
+## API
+
+The application is now hosted on Render at [https://deutsch-immo-vision-apartment-price.onrender.com](https://deutsch-immo-vision-apartment-price.onrender.com).
+
+### Endpoints
+
+- **GET** `/`: Returns a welcome message.
+- **POST** `/predict`: Takes apartment details as input and returns the predicted rental price.
+
+### Example Requests
+
+Example request for prediction with JSON data from a file:
+
+```bash
+curl -X POST "https://deutsch-immo-vision-apartment-price.onrender.com/predict" \
+-H "Content-Type: application/json" \
+-d @tests/input.json
+```
 
 ---
 
@@ -103,13 +124,20 @@ python main.py
 
 ---
 
+## Dataset
+The dataset used for this project is taken from Kaggle. It contains apartment rental offers in Germany and can be found at the following link:
+[Apartment Rental Offers in Germany](https://www.kaggle.com/datasets/corrieaar/apartment-rental-offers-in-germany)
+
+---
+
 ## **Technologies Used**
 - **Python**: Core language for data processing, modeling, and deployment.
 - **Pandas, Numpy**: Data manipulation and preprocessing.
 - **Scikit-Learn, XGBoost**: Model development and evaluation.
 - **FastAPI**: API deployment.
-- **Docker**: Containerization for deployment.
+- **GitHub Actions**: CI/CD Pipeplines.
 - **Jupyter Notebooks**: Data exploration and preliminary analysis.
+- **Deployment**: Render Free Hosting.
 
 ---
 
@@ -130,10 +158,11 @@ pytest tests/
 
 The project is under active development, with the following milestones:
 - ✅ Initial Setup and Data Collection
-- ⬜️ Data Preprocessing and Feature Engineering
-- ⬜️ Model Development and Evaluation
-- ⬜️ Deployment and API Integration
-
+- ✅ Data Preprocessing and Feature Engineering
+- ✅ Model Development and Evaluation
+- ✅ Deployment and API Integration
+- ✅ CI/CD Pipelines
+- ✅ Frontend Development
 ---
 
 ## **Contributing**
