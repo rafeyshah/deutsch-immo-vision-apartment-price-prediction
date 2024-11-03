@@ -77,7 +77,7 @@ document.getElementById('predictionForm').addEventListener('submit', async (even
     payload.petsAllowed_yes = parseInt(document.getElementById('petsAllowed_yes').value) || 0;
 
     try {
-        const response = await fetch('https://deutsch-immo-vision-apartment-price.onrender.com/predict', {
+        const response = await fetch('http://127.0.0.1:8000/predict', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -96,3 +96,35 @@ document.getElementById('predictionForm').addEventListener('submit', async (even
         document.getElementById('result').innerHTML = `<p class="error">Error: ${error.message}</p>`;
     }
 });
+
+// Helper function to populate dropdowns
+async function populateDropdown(url, dropdownId) {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+
+        const dropdown = document.getElementById(dropdownId);
+        dropdown.innerHTML = ''; // Clear existing options
+
+        Object.entries(data).forEach(([label, values]) => {
+            values.forEach((name, value) => {
+                var option = document.createElement('option');
+                option.value = value; // Numeric value
+                option.text = name.name;  // Display name
+                dropdown.appendChild(option);
+            })
+
+        });
+    } catch (error) {
+        console.error(`Failed to fetch data for ${dropdownId}:`, error);
+    }
+}
+
+// Call the helper function to populate each dropdown on page load
+document.addEventListener('DOMContentLoaded', () => {
+    populateDropdown('http://127.0.0.1:8000/states', 'regio1');
+    populateDropdown('http://127.0.0.1:8000/cities', 'regio2');
+    populateDropdown('http://127.0.0.1:8000/streets', 'regio3');
+});
+

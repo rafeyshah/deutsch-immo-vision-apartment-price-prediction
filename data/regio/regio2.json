@@ -1,421 +1,1678 @@
-{
-    "Chemnitz": 12518,
-    "Leipzig": 12352,
-    "Dresden": 6765,
-    "Berlin": 6672,
-    "Magdeburg": 4765,
-    "Halle_Saale": 4468,
-    "Essen": 4108,
-    "Duisburg": 3480,
-    "Mittelsachsen_Kreis": 3155,
-    "Dortmund": 2974,
-    "Gelsenkirchen": 2934,
-    "Recklinghausen_Kreis": 2732,
-    "Düsseldorf": 2590,
-    "Zwickau": 2510,
-    "Hamburg": 2319,
-    "Zwickau_Kreis": 2318,
-    "Wuppertal": 2316,
-    "Leipzig_Kreis": 2280,
-    "Frankfurt_am_Main": 2175,
-    "Meißen_Kreis": 2174,
-    "Sächsische_Schweiz_Osterzgebirge_Kreis": 2040,
-    "Köln": 2039,
-    "Gera": 1973,
-    "Plauen": 1960,
-    "Bochum": 1923,
-    "Erzgebirgskreis": 1837,
-    "Bremen": 1793,
-    "Aachen": 1733,
-    "Saalekreis": 1670,
-    "Nürnberg": 1592,
-    "Märkischer_Kreis": 1539,
-    "Bautzen_Kreis": 1538,
-    "Burgenlandkreis": 1490,
-    "Hannover": 1438,
-    "Hagen": 1417,
-    "München": 1411,
-    "Mettmann_Kreis": 1383,
-    "Ennepe_Ruhr_Kreis": 1367,
-    "Mönchengladbach": 1310,
-    "Harz_Kreis": 1298,
-    "Dessau_Roßlau": 1271,
-    "Krefeld": 1263,
-    "Wiesbaden": 1184,
-    "Erfurt": 1144,
-    "Wesel_Kreis": 1142,
-    "Herne": 1139,
-    "Nordsachsen_Kreis": 1127,
-    "Mannheim": 1120,
-    "Rhein_Sieg_Kreis": 1078,
-    "Bonn": 1056,
-    "Hannover_Kreis": 1051,
-    "Unna_Kreis": 1046,
-    "Bielefeld": 1042,
-    "Neuss_Rhein_Kreis": 1034,
-    "Rhein_Erft_Kreis": 1020,
-    "Görlitz_Kreis": 1003,
-    "Görlitz": 990,
-    "Bremerhaven": 981,
-    "Aachen_Kreis": 934,
-    "Vogtlandkreis": 929,
-    "Cottbus": 905,
-    "Stuttgart": 881,
-    "Main_Kinzig_Kreis": 866,
-    "Kassel": 861,
-    "Anhalt_Bitterfeld_Kreis": 857,
-    "Mülheim_an_der_Ruhr": 839,
-    "Kiel": 813,
-    "Offenbach_Kreis": 809,
-    "Pinneberg_Kreis": 797,
-    "Schwerin": 795,
-    "Rhein_Neckar_Kreis": 780,
-    "Minden_Lübbecke_Kreis": 776,
-    "Braunschweig": 771,
-    "Goslar_Kreis": 757,
-    "Neubrandenburg": 754,
-    "Oberhausen": 754,
-    "Rostock": 739,
-    "Viersen_Kreis": 728,
-    "Augsburg": 721,
-    "Stadtverband_Saarbrücken_Kreis": 716,
-    "Gießen_Kreis": 702,
-    "Mansfeld_Südharz_Kreis": 702,
-    "Rheinisch_Bergischer_Kreis": 700,
-    "Börde_Kreis": 687,
-    "Salzlandkreis": 684,
-    "Kleve_Kreis": 648,
-    "Göttingen_Kreis": 645,
-    "Mainz": 641,
-    "Remscheid": 640,
-    "Stendal_Kreis": 634,
-    "Solingen": 628,
-    "Lippe_Kreis": 625,
-    "Lörrach_Kreis": 620,
-    "Wetteraukreis": 619,
-    "Segeberg_Kreis": 612,
-    "Hildesheim_Kreis": 611,
-    "Main_Taunus_Kreis": 606,
-    "Altenburger_Land_Kreis": 602,
-    "Rheingau_Taunus_Kreis": 601,
-    "Siegen_Wittgenstein_Kreis": 593,
-    "Paderborn_Kreis": 589,
-    "Uckermark_Kreis": 585,
-    "Kaiserslautern": 584,
-    "Oldenburg_Oldenburg": 580,
-    "Esslingen_Kreis": 565,
-    "Wittenberg_Kreis": 560,
-    "Groß_Gerau_Kreis": 559,
-    "Trier": 558,
-    "Greiz_Kreis": 555,
-    "Flensburg": 550,
-    "Oberbergischer_Kreis": 538,
-    "Heinsberg_Kreis": 536,
-    "Hochtaunuskreis": 536,
-    "Wilhelmshaven": 536,
-    "Marburg_Biedenkopf_Kreis": 528,
-    "Ingolstadt": 523,
-    "Celle_Kreis": 517,
-    "Düren_Kreis": 517,
-    "Gütersloh_Kreis": 513,
-    "Brandenburg_an_der_Havel": 512,
-    "Salzgitter": 498,
-    "Barnim_Kreis": 496,
-    "Soest_Kreis": 492,
-    "Gotha_Kreis": 484,
-    "Borken_Kreis": 483,
-    "Mainz_Bingen_Kreis": 469,
-    "Ludwigsburg_Kreis": 457,
-    "Karlsruhe_Kreis": 455,
-    "Regensburg": 454,
-    "Unstrut_Hainich_Kreis": 451,
-    "Herzogtum_Lauenburg_Kreis": 447,
-    "Eisenach": 446,
-    "Osnabrück": 446,
-    "Koblenz": 443,
-    "Harburg_Kreis": 431,
-    "Darmstadt_Dieburg_Kreis": 424,
-    "Altmarkkreis_Salzwedel": 424,
-    "Offenbach_am_Main": 424,
-    "Northeim_Kreis": 422,
-    "Münster": 421,
-    "Westerwaldkreis": 418,
-    "Stade_Kreis": 418,
-    "Rendsburg_Eckernförde_Kreis": 418,
-    "Heilbronn_Kreis": 414,
-    "Mecklenburg_Strelitz_Kreis": 413,
-    "Nordvorpommern_Kreis": 413,
-    "Lüneburg_Kreis": 413,
-    "Bergstraße_Kreis": 411,
-    "Jerichower_Land_Kreis": 405,
-    "Bad_Kreuznach_Kreis": 402,
-    "Stormarn_Kreis": 398,
-    "Schleswig_Flensburg_Kreis": 397,
-    "Steinfurt_Kreis": 396,
-    "Karlsruhe": 394,
-    "Passau": 386,
-    "Böblingen_Kreis": 386,
-    "Ludwigslust_Kreis": 379,
-    "Nordwestmecklenburg_Kreis": 377,
-    "Nordhausen_Kreis": 375,
-    "Potsdam": 374,
-    "Mayen_Koblenz_Kreis": 368,
-    "Oberspreewald_Lausitz_Kreis": 365,
-    "Helmstedt_Kreis": 361,
-    "Limburg_Weilburg_Kreis": 360,
-    "Hochsauerlandkreis": 360,
-    "Fulda_Kreis": 346,
-    "Herford_Kreis": 346,
-    "Würzburg": 344,
-    "Lübeck": 340,
-    "Teltow_Fläming_Kreis": 328,
-    "Fürth": 328,
-    "Greifswald": 326,
-    "Neumünster": 326,
-    "Ortenaukreis": 325,
-    "Dahme_Spreewald_Kreis": 323,
-    "Darmstadt": 323,
-    "Bottrop": 319,
-    "Leverkusen": 318,
-    "Heidelberg": 314,
-    "Stralsund": 313,
-    "Märkisch_Oderland_Kreis": 312,
-    "Oberhavel_Kreis": 310,
-    "Aschaffenburg": 309,
-    "Frankfurt_Oder": 308,
-    "Ludwigshafen_am_Rhein": 307,
-    "Hameln_Pyrmont_Kreis": 306,
-    "Erlangen": 305,
-    "Schaumburg_Kreis": 304,
-    "Havelland_Kreis": 303,
-    "Ahrweiler_Kreis": 302,
-    "Spree_Neiße_Kreis": 302,
-    "Ammerland_Kreis": 301,
-    "Ostholstein_Kreis": 301,
-    "Potsdam_Mittelmark_Kreis": 297,
-    "Steinburg_Kreis": 296,
-    "Hoyerswerda": 296,
-    "Güstrow_Kreis": 295,
-    "Oder_Spree_Kreis": 288,
-    "Ostvorpommern_Kreis": 288,
-    "Euskirchen_Kreis": 288,
-    "Augsburg_Kreis": 287,
-    "Rosenheim_Kreis": 285,
-    "Rhein_Lahn_Kreis": 283,
-    "München_Kreis": 283,
-    "Schmalkalden_Meiningen_Kreis": 282,
-    "Pforzheim": 281,
-    "Ilm_Kreis": 272,
-    "Wolfsburg": 271,
-    "Waldshut_Kreis": 271,
-    "Holzminden_Kreis": 270,
-    "Warendorf_Kreis": 270,
-    "Heilbronn": 270,
-    "Lahn_Dill_Kreis": 266,
-    "Reutlingen_Kreis": 261,
-    "Neuwied_Kreis": 261,
-    "Rems_Murr_Kreis": 259,
-    "Freising_Kreis": 254,
-    "Göppingen_Kreis": 254,
-    "Wismar": 253,
-    "Mühldorf_am_Inn_Kreis": 251,
-    "Aurich_Kreis": 250,
-    "Wesermarsch_Kreis": 248,
-    "Osterode_am_Harz_Kreis": 247,
-    "Cuxhaven_Kreis": 244,
-    "Elbe_Elster_Kreis": 237,
-    "Tübingen_Kreis": 234,
-    "Bayreuth": 233,
-    "Hamm": 233,
-    "Coesfeld_Kreis": 231,
-    "Kassel_Kreis": 230,
-    "Landshut": 230,
-    "Bodenseekreis": 229,
-    "Calw_Kreis": 228,
-    "Bad_Doberan_Kreis": 227,
-    "Osnabrück_Kreis": 227,
-    "Diepholz_Kreis": 225,
-    "Pfaffenhofen_an_der_Ilm_Kreis": 223,
-    "Landshut_Kreis": 221,
-    "Ostprignitz_Ruppin_Kreis": 219,
-    "Deggendorf_Kreis": 219,
-    "Aschaffenburg_Kreis": 218,
-    "Saarlouis_Kreis": 216,
-    "Nordfriesland_Kreis": 214,
-    "Rastatt_Kreis": 210,
-    "Saarpfalz_Kreis": 210,
-    "Suhl": 209,
-    "Gifhorn_Kreis": 208,
-    "Rügen_Kreis": 208,
-    "Uecker_Randow_Kreis": 207,
-    "Heidekreis": 204,
-    "Emsland_Kreis": 203,
-    "Saale_Holzland_Kreis": 203,
-    "Ostalbkreis": 199,
-    "Regensburg_Kreis": 197,
-    "Wolfenbüttel_Kreis": 196,
-    "Ulm": 196,
-    "Erlangen_Höchstadt_Kreis": 195,
-    "Hersfeld_Rotenburg_Kreis": 192,
-    "Baden_Baden": 191,
-    "Erding_Kreis": 191,
-    "Worms": 191,
-    "Schwäbisch_Hall_Kreis": 188,
-    "Werra_Meißner_Kreis": 188,
-    "Emden": 187,
-    "Schwarzwald_Baar_Kreis": 186,
-    "Passau_Kreis": 186,
-    "Breisgau_Hochschwarzwald_Kreis": 186,
-    "Delmenhorst": 185,
-    "Wartburgkreis": 185,
-    "Alb_Donau_Kreis": 185,
-    "Alzey_Worms_Kreis": 184,
-    "Unterallgäu_Kreis": 180,
-    "Pirmasens": 180,
-    "Parchim_Kreis": 177,
-    "Verden_Kreis": 177,
-    "Dithmarschen_Kreis": 177,
-    "Eichstätt_Kreis": 176,
-    "Höxter_Kreis": 176,
-    "Würzburg_Kreis": 173,
-    "Biberach_Kreis": 172,
-    "Peine_Kreis": 171,
-    "Germersheim_Kreis": 171,
-    "Freudenstadt_Kreis": 171,
-    "Vechta_Kreis": 171,
-    "Müritz_Kreis": 170,
-    "Prignitz_Kreis": 169,
-    "Rotenburg_Wümme_Kreis": 166,
-    "Leer_Kreis": 165,
-    "Ravensburg_Kreis": 165,
-    "Konstanz_Kreis": 163,
-    "Fürstenfeldbruck_Kreis": 161,
-    "Weimar": 159,
-    "Traunstein_Kreis": 156,
-    "Neuburg_Schrobenhausen_Kreis": 156,
-    "Neu_Ulm_Kreis": 154,
-    "Plön_Kreis": 153,
-    "Bad_Dürkheim_Kreis": 153,
-    "Dachau_Kreis": 153,
-    "Berchtesgadener_Land_Kreis": 150,
-    "Enzkreis": 149,
-    "Weimarer_Land_Kreis": 149,
-    "Demmin_Kreis": 147,
-    "Jena": 146,
-    "Trier_Saarburg_Kreis": 146,
-    "Hof": 145,
-    "Rhein_Pfalz_Kreis": 145,
-    "Kelheim_Kreis": 144,
-    "Ebersberg_Kreis": 144,
-    "Zollernalbkreis": 140,
-    "Uelzen_Kreis": 139,
-    "Bad_Kissingen_Kreis": 136,
-    "Osterholz_Kreis": 135,
-    "Bamberg": 134,
-    "Neustadt_an_der_Weinstraße": 133,
-    "Neunkirchen_Kreis": 130,
-    "Altenkirchen_Westerwald_Kreis": 130,
-    "Eichsfeld_Kreis": 129,
-    "Rottweil_Kreis": 128,
-    "Main_Tauber_Kreis": 128,
-    "Hohenlohekreis": 128,
-    "Heidenheim_Kreis": 127,
-    "Schwalm_Eder_Kreis": 126,
-    "Südliche_Weinstraße_Kreis": 125,
-    "Straubing": 122,
-    "Kyffhäuserkreis": 121,
-    "Landsberg_am_Lech_Kreis": 121,
-    "Neumarkt_in_der_Oberpfalz_Kreis": 118,
-    "Bad_Tölz_Wolfratshausen_Kreis": 117,
-    "Aichach_Friedberg_Kreis": 114,
-    "Fürth_Kreis": 112,
-    "Miltenberg_Kreis": 112,
-    "Coburg": 111,
-    "Ansbach_Kreis": 110,
-    "Birkenfeld_Kreis": 110,
-    "Oldenburg_Kreis": 109,
-    "Rhein_Hunsrück_Kreis": 109,
-    "Bitburg_Prüm_Kreis": 108,
-    "Nienburg_Weser_Kreis": 106,
-    "Forchheim_Kreis": 105,
-    "Freiburg_im_Breisgau": 105,
-    "Saalfeld_Rudolstadt_Kreis": 104,
-    "Kaiserslautern_Kreis": 103,
-    "Starnberg_Kreis": 103,
-    "Schwandorf_Kreis": 100,
-    "Nürnberger_Land_Kreis": 100,
-    "Frankenthal_Pfalz": 99,
-    "Hof_Kreis": 98,
-    "Miesbach_Kreis": 97,
-    "Bernkastel_Wittlich_Kreis": 96,
-    "Neckar_Odenwald_Kreis": 96,
-    "Olpe_Kreis": 95,
-    "Dingolfing_Landau_Kreis": 93,
-    "Coburg_Kreis": 92,
-    "Cloppenburg_Kreis": 91,
-    "Landau_in_der_Pfalz": 91,
-    "Ostallgäu_Kreis": 89,
-    "Lindau_Bodensee_Kreis": 88,
-    "Cham_Kreis": 88,
-    "Friesland_Kreis": 86,
-    "Rottal_Inn_Kreis": 86,
-    "Waldeck_Frankenberg_Kreis": 86,
-    "Dillingen_an_der_Donau_Kreis": 85,
-    "Donau_Ries_Kreis": 85,
-    "Tuttlingen_Kreis": 85,
-    "Vogelsbergkreis": 84,
-    "Zweibrücken": 83,
-    "Günzburg_Kreis": 83,
-    "Donnersbergkreis": 82,
-    "Sonneberg_Kreis": 80,
-    "Weilheim_Schongau_Kreis": 80,
-    "Merzig_Wadern_Kreis": 77,
-    "Amberg": 77,
-    "Kaufbeuren": 75,
-    "Grafschaft_Bentheim_Kreis": 74,
-    "Saale_Orla_Kreis": 74,
-    "Bayreuth_Kreis": 73,
-    "Main_Spessart_Kreis": 73,
-    "Garmisch_Partenkirchen_Kreis": 73,
-    "Rosenheim": 72,
-    "Oberallgäu_Kreis": 72,
-    "Kitzingen_Kreis": 72,
-    "Odenwaldkreis": 71,
-    "Regen_Kreis": 68,
-    "Straubing_Bogen_Kreis": 68,
-    "Emmendingen_Kreis": 66,
-    "Cochem_Zell_Kreis": 66,
-    "Sömmerda_Kreis": 65,
-    "Altötting_Kreis": 63,
-    "Wunsiedel_im_Fichtelgebirge_Kreis": 62,
-    "Ansbach": 62,
-    "Bamberg_Kreis": 62,
-    "Amberg_Sulzbach_Kreis": 62,
-    "Kulmbach_Kreis": 60,
-    "Hildburghausen_Kreis": 60,
-    "Roth_Kreis": 60,
-    "Kusel_Kreis": 57,
-    "Speyer": 56,
-    "Südwestpfalz_Kreis": 55,
-    "Wittmund_Kreis": 55,
-    "Lüchow_Dannenberg_Kreis": 54,
-    "Soltau_Fallingbostel_Kreis": 51,
-    "Kempten_Allgäu": 51,
-    "Tirschenreuth_Kreis": 51,
-    "Schweinfurt": 50,
-    "Sigmaringen_Kreis": 49,
-    "Weiden_in_der_Oberpfalz": 47,
-    "Sankt_Wendel_Kreis": 44,
-    "Vulkaneifel_Kreis": 41,
-    "Rhön_Grabfeld_Kreis": 39,
-    "Weißenburg_Gunzenhausen_Kreis": 39,
-    "Schweinfurt_Kreis": 35,
-    "Memmingen": 33,
-    "Schwabach": 33,
-    "Neustadt_a.d._Aisch_Bad_Windsheim_Kreis": 32,
-    "Lichtenfels_Kreis": 31,
-    "Freyung_Grafenau_Kreis": 30,
-    "Haßberge_Kreis": 23,
-    "Neustadt_a.d._Waldnaab_Kreis": 15,
-    "Kronach_Kreis": 12
-}
+[
+    {
+        "name": "Chemnitz",
+        "value": 12518
+    },
+    {
+        "name": "Leipzig",
+        "value": 12352
+    },
+    {
+        "name": "Dresden",
+        "value": 6765
+    },
+    {
+        "name": "Berlin",
+        "value": 6672
+    },
+    {
+        "name": "Magdeburg",
+        "value": 4765
+    },
+    {
+        "name": "Halle_Saale",
+        "value": 4468
+    },
+    {
+        "name": "Essen",
+        "value": 4108
+    },
+    {
+        "name": "Duisburg",
+        "value": 3480
+    },
+    {
+        "name": "Mittelsachsen_Kreis",
+        "value": 3155
+    },
+    {
+        "name": "Dortmund",
+        "value": 2974
+    },
+    {
+        "name": "Gelsenkirchen",
+        "value": 2934
+    },
+    {
+        "name": "Recklinghausen_Kreis",
+        "value": 2732
+    },
+    {
+        "name": "Düsseldorf",
+        "value": 2590
+    },
+    {
+        "name": "Zwickau",
+        "value": 2510
+    },
+    {
+        "name": "Hamburg",
+        "value": 2319
+    },
+    {
+        "name": "Zwickau_Kreis",
+        "value": 2318
+    },
+    {
+        "name": "Wuppertal",
+        "value": 2316
+    },
+    {
+        "name": "Leipzig_Kreis",
+        "value": 2280
+    },
+    {
+        "name": "Frankfurt_am_Main",
+        "value": 2175
+    },
+    {
+        "name": "Meißen_Kreis",
+        "value": 2174
+    },
+    {
+        "name": "Sächsische_Schweiz_Osterzgebirge_Kreis",
+        "value": 2040
+    },
+    {
+        "name": "Köln",
+        "value": 2039
+    },
+    {
+        "name": "Gera",
+        "value": 1973
+    },
+    {
+        "name": "Plauen",
+        "value": 1960
+    },
+    {
+        "name": "Bochum",
+        "value": 1923
+    },
+    {
+        "name": "Erzgebirgskreis",
+        "value": 1837
+    },
+    {
+        "name": "Bremen",
+        "value": 1793
+    },
+    {
+        "name": "Aachen",
+        "value": 1733
+    },
+    {
+        "name": "Saalekreis",
+        "value": 1670
+    },
+    {
+        "name": "Nürnberg",
+        "value": 1592
+    },
+    {
+        "name": "Märkischer_Kreis",
+        "value": 1539
+    },
+    {
+        "name": "Bautzen_Kreis",
+        "value": 1538
+    },
+    {
+        "name": "Burgenlandkreis",
+        "value": 1490
+    },
+    {
+        "name": "Hannover",
+        "value": 1438
+    },
+    {
+        "name": "Hagen",
+        "value": 1417
+    },
+    {
+        "name": "München",
+        "value": 1411
+    },
+    {
+        "name": "Mettmann_Kreis",
+        "value": 1383
+    },
+    {
+        "name": "Ennepe_Ruhr_Kreis",
+        "value": 1367
+    },
+    {
+        "name": "Mönchengladbach",
+        "value": 1310
+    },
+    {
+        "name": "Harz_Kreis",
+        "value": 1298
+    },
+    {
+        "name": "Dessau_Roßlau",
+        "value": 1271
+    },
+    {
+        "name": "Krefeld",
+        "value": 1263
+    },
+    {
+        "name": "Wiesbaden",
+        "value": 1184
+    },
+    {
+        "name": "Erfurt",
+        "value": 1144
+    },
+    {
+        "name": "Wesel_Kreis",
+        "value": 1142
+    },
+    {
+        "name": "Herne",
+        "value": 1139
+    },
+    {
+        "name": "Nordsachsen_Kreis",
+        "value": 1127
+    },
+    {
+        "name": "Mannheim",
+        "value": 1120
+    },
+    {
+        "name": "Rhein_Sieg_Kreis",
+        "value": 1078
+    },
+    {
+        "name": "Bonn",
+        "value": 1056
+    },
+    {
+        "name": "Hannover_Kreis",
+        "value": 1051
+    },
+    {
+        "name": "Unna_Kreis",
+        "value": 1046
+    },
+    {
+        "name": "Bielefeld",
+        "value": 1042
+    },
+    {
+        "name": "Neuss_Rhein_Kreis",
+        "value": 1034
+    },
+    {
+        "name": "Rhein_Erft_Kreis",
+        "value": 1020
+    },
+    {
+        "name": "Görlitz_Kreis",
+        "value": 1003
+    },
+    {
+        "name": "Görlitz",
+        "value": 990
+    },
+    {
+        "name": "Bremerhaven",
+        "value": 981
+    },
+    {
+        "name": "Aachen_Kreis",
+        "value": 934
+    },
+    {
+        "name": "Vogtlandkreis",
+        "value": 929
+    },
+    {
+        "name": "Cottbus",
+        "value": 905
+    },
+    {
+        "name": "Stuttgart",
+        "value": 881
+    },
+    {
+        "name": "Main_Kinzig_Kreis",
+        "value": 866
+    },
+    {
+        "name": "Kassel",
+        "value": 861
+    },
+    {
+        "name": "Anhalt_Bitterfeld_Kreis",
+        "value": 857
+    },
+    {
+        "name": "Mülheim_an_der_Ruhr",
+        "value": 839
+    },
+    {
+        "name": "Kiel",
+        "value": 813
+    },
+    {
+        "name": "Offenbach_Kreis",
+        "value": 809
+    },
+    {
+        "name": "Pinneberg_Kreis",
+        "value": 797
+    },
+    {
+        "name": "Schwerin",
+        "value": 795
+    },
+    {
+        "name": "Rhein_Neckar_Kreis",
+        "value": 780
+    },
+    {
+        "name": "Minden_Lübbecke_Kreis",
+        "value": 776
+    },
+    {
+        "name": "Braunschweig",
+        "value": 771
+    },
+    {
+        "name": "Goslar_Kreis",
+        "value": 757
+    },
+    {
+        "name": "Neubrandenburg",
+        "value": 754
+    },
+    {
+        "name": "Oberhausen",
+        "value": 754
+    },
+    {
+        "name": "Rostock",
+        "value": 739
+    },
+    {
+        "name": "Viersen_Kreis",
+        "value": 728
+    },
+    {
+        "name": "Augsburg",
+        "value": 721
+    },
+    {
+        "name": "Stadtverband_Saarbrücken_Kreis",
+        "value": 716
+    },
+    {
+        "name": "Gießen_Kreis",
+        "value": 702
+    },
+    {
+        "name": "Mansfeld_Südharz_Kreis",
+        "value": 702
+    },
+    {
+        "name": "Rheinisch_Bergischer_Kreis",
+        "value": 700
+    },
+    {
+        "name": "Börde_Kreis",
+        "value": 687
+    },
+    {
+        "name": "Salzlandkreis",
+        "value": 684
+    },
+    {
+        "name": "Kleve_Kreis",
+        "value": 648
+    },
+    {
+        "name": "Göttingen_Kreis",
+        "value": 645
+    },
+    {
+        "name": "Mainz",
+        "value": 641
+    },
+    {
+        "name": "Remscheid",
+        "value": 640
+    },
+    {
+        "name": "Stendal_Kreis",
+        "value": 634
+    },
+    {
+        "name": "Solingen",
+        "value": 628
+    },
+    {
+        "name": "Lippe_Kreis",
+        "value": 625
+    },
+    {
+        "name": "Lörrach_Kreis",
+        "value": 620
+    },
+    {
+        "name": "Wetteraukreis",
+        "value": 619
+    },
+    {
+        "name": "Segeberg_Kreis",
+        "value": 612
+    },
+    {
+        "name": "Hildesheim_Kreis",
+        "value": 611
+    },
+    {
+        "name": "Main_Taunus_Kreis",
+        "value": 606
+    },
+    {
+        "name": "Altenburger_Land_Kreis",
+        "value": 602
+    },
+    {
+        "name": "Rheingau_Taunus_Kreis",
+        "value": 601
+    },
+    {
+        "name": "Siegen_Wittgenstein_Kreis",
+        "value": 593
+    },
+    {
+        "name": "Paderborn_Kreis",
+        "value": 589
+    },
+    {
+        "name": "Uckermark_Kreis",
+        "value": 585
+    },
+    {
+        "name": "Kaiserslautern",
+        "value": 584
+    },
+    {
+        "name": "Oldenburg_Oldenburg",
+        "value": 580
+    },
+    {
+        "name": "Esslingen_Kreis",
+        "value": 565
+    },
+    {
+        "name": "Wittenberg_Kreis",
+        "value": 560
+    },
+    {
+        "name": "Groß_Gerau_Kreis",
+        "value": 559
+    },
+    {
+        "name": "Trier",
+        "value": 558
+    },
+    {
+        "name": "Greiz_Kreis",
+        "value": 555
+    },
+    {
+        "name": "Flensburg",
+        "value": 550
+    },
+    {
+        "name": "Oberbergischer_Kreis",
+        "value": 538
+    },
+    {
+        "name": "Heinsberg_Kreis",
+        "value": 536
+    },
+    {
+        "name": "Hochtaunuskreis",
+        "value": 536
+    },
+    {
+        "name": "Wilhelmshaven",
+        "value": 536
+    },
+    {
+        "name": "Marburg_Biedenkopf_Kreis",
+        "value": 528
+    },
+    {
+        "name": "Ingolstadt",
+        "value": 523
+    },
+    {
+        "name": "Celle_Kreis",
+        "value": 517
+    },
+    {
+        "name": "Düren_Kreis",
+        "value": 517
+    },
+    {
+        "name": "Gütersloh_Kreis",
+        "value": 513
+    },
+    {
+        "name": "Brandenburg_an_der_Havel",
+        "value": 512
+    },
+    {
+        "name": "Salzgitter",
+        "value": 498
+    },
+    {
+        "name": "Barnim_Kreis",
+        "value": 496
+    },
+    {
+        "name": "Soest_Kreis",
+        "value": 492
+    },
+    {
+        "name": "Gotha_Kreis",
+        "value": 484
+    },
+    {
+        "name": "Borken_Kreis",
+        "value": 483
+    },
+    {
+        "name": "Mainz_Bingen_Kreis",
+        "value": 469
+    },
+    {
+        "name": "Ludwigsburg_Kreis",
+        "value": 457
+    },
+    {
+        "name": "Karlsruhe_Kreis",
+        "value": 455
+    },
+    {
+        "name": "Regensburg",
+        "value": 454
+    },
+    {
+        "name": "Unstrut_Hainich_Kreis",
+        "value": 451
+    },
+    {
+        "name": "Herzogtum_Lauenburg_Kreis",
+        "value": 447
+    },
+    {
+        "name": "Eisenach",
+        "value": 446
+    },
+    {
+        "name": "Osnabrück",
+        "value": 446
+    },
+    {
+        "name": "Koblenz",
+        "value": 443
+    },
+    {
+        "name": "Harburg_Kreis",
+        "value": 431
+    },
+    {
+        "name": "Darmstadt_Dieburg_Kreis",
+        "value": 424
+    },
+    {
+        "name": "Altmarkkreis_Salzwedel",
+        "value": 424
+    },
+    {
+        "name": "Offenbach_am_Main",
+        "value": 424
+    },
+    {
+        "name": "Northeim_Kreis",
+        "value": 422
+    },
+    {
+        "name": "Münster",
+        "value": 421
+    },
+    {
+        "name": "Westerwaldkreis",
+        "value": 418
+    },
+    {
+        "name": "Stade_Kreis",
+        "value": 418
+    },
+    {
+        "name": "Rendsburg_Eckernförde_Kreis",
+        "value": 418
+    },
+    {
+        "name": "Heilbronn_Kreis",
+        "value": 414
+    },
+    {
+        "name": "Mecklenburg_Strelitz_Kreis",
+        "value": 413
+    },
+    {
+        "name": "Nordvorpommern_Kreis",
+        "value": 413
+    },
+    {
+        "name": "Lüneburg_Kreis",
+        "value": 413
+    },
+    {
+        "name": "Bergstraße_Kreis",
+        "value": 411
+    },
+    {
+        "name": "Jerichower_Land_Kreis",
+        "value": 405
+    },
+    {
+        "name": "Bad_Kreuznach_Kreis",
+        "value": 402
+    },
+    {
+        "name": "Stormarn_Kreis",
+        "value": 398
+    },
+    {
+        "name": "Schleswig_Flensburg_Kreis",
+        "value": 397
+    },
+    {
+        "name": "Steinfurt_Kreis",
+        "value": 396
+    },
+    {
+        "name": "Karlsruhe",
+        "value": 394
+    },
+    {
+        "name": "Passau",
+        "value": 386
+    },
+    {
+        "name": "Böblingen_Kreis",
+        "value": 386
+    },
+    {
+        "name": "Ludwigslust_Kreis",
+        "value": 379
+    },
+    {
+        "name": "Nordwestmecklenburg_Kreis",
+        "value": 377
+    },
+    {
+        "name": "Nordhausen_Kreis",
+        "value": 375
+    },
+    {
+        "name": "Potsdam",
+        "value": 374
+    },
+    {
+        "name": "Mayen_Koblenz_Kreis",
+        "value": 368
+    },
+    {
+        "name": "Oberspreewald_Lausitz_Kreis",
+        "value": 365
+    },
+    {
+        "name": "Helmstedt_Kreis",
+        "value": 361
+    },
+    {
+        "name": "Limburg_Weilburg_Kreis",
+        "value": 360
+    },
+    {
+        "name": "Hochsauerlandkreis",
+        "value": 360
+    },
+    {
+        "name": "Fulda_Kreis",
+        "value": 346
+    },
+    {
+        "name": "Herford_Kreis",
+        "value": 346
+    },
+    {
+        "name": "Würzburg",
+        "value": 344
+    },
+    {
+        "name": "Lübeck",
+        "value": 340
+    },
+    {
+        "name": "Teltow_Fläming_Kreis",
+        "value": 328
+    },
+    {
+        "name": "Fürth",
+        "value": 328
+    },
+    {
+        "name": "Greifswald",
+        "value": 326
+    },
+    {
+        "name": "Neumünster",
+        "value": 326
+    },
+    {
+        "name": "Ortenaukreis",
+        "value": 325
+    },
+    {
+        "name": "Dahme_Spreewald_Kreis",
+        "value": 323
+    },
+    {
+        "name": "Darmstadt",
+        "value": 323
+    },
+    {
+        "name": "Bottrop",
+        "value": 319
+    },
+    {
+        "name": "Leverkusen",
+        "value": 318
+    },
+    {
+        "name": "Heidelberg",
+        "value": 314
+    },
+    {
+        "name": "Stralsund",
+        "value": 313
+    },
+    {
+        "name": "Märkisch_Oderland_Kreis",
+        "value": 312
+    },
+    {
+        "name": "Oberhavel_Kreis",
+        "value": 310
+    },
+    {
+        "name": "Aschaffenburg",
+        "value": 309
+    },
+    {
+        "name": "Frankfurt_Oder",
+        "value": 308
+    },
+    {
+        "name": "Ludwigshafen_am_Rhein",
+        "value": 307
+    },
+    {
+        "name": "Hameln_Pyrmont_Kreis",
+        "value": 306
+    },
+    {
+        "name": "Erlangen",
+        "value": 305
+    },
+    {
+        "name": "Schaumburg_Kreis",
+        "value": 304
+    },
+    {
+        "name": "Havelland_Kreis",
+        "value": 303
+    },
+    {
+        "name": "Ahrweiler_Kreis",
+        "value": 302
+    },
+    {
+        "name": "Spree_Neiße_Kreis",
+        "value": 302
+    },
+    {
+        "name": "Ammerland_Kreis",
+        "value": 301
+    },
+    {
+        "name": "Ostholstein_Kreis",
+        "value": 301
+    },
+    {
+        "name": "Potsdam_Mittelmark_Kreis",
+        "value": 297
+    },
+    {
+        "name": "Steinburg_Kreis",
+        "value": 296
+    },
+    {
+        "name": "Hoyerswerda",
+        "value": 296
+    },
+    {
+        "name": "Güstrow_Kreis",
+        "value": 295
+    },
+    {
+        "name": "Oder_Spree_Kreis",
+        "value": 288
+    },
+    {
+        "name": "Ostvorpommern_Kreis",
+        "value": 288
+    },
+    {
+        "name": "Euskirchen_Kreis",
+        "value": 288
+    },
+    {
+        "name": "Augsburg_Kreis",
+        "value": 287
+    },
+    {
+        "name": "Rosenheim_Kreis",
+        "value": 285
+    },
+    {
+        "name": "Rhein_Lahn_Kreis",
+        "value": 283
+    },
+    {
+        "name": "München_Kreis",
+        "value": 283
+    },
+    {
+        "name": "Schmalkalden_Meiningen_Kreis",
+        "value": 282
+    },
+    {
+        "name": "Pforzheim",
+        "value": 281
+    },
+    {
+        "name": "Ilm_Kreis",
+        "value": 272
+    },
+    {
+        "name": "Wolfsburg",
+        "value": 271
+    },
+    {
+        "name": "Waldshut_Kreis",
+        "value": 271
+    },
+    {
+        "name": "Holzminden_Kreis",
+        "value": 270
+    },
+    {
+        "name": "Warendorf_Kreis",
+        "value": 270
+    },
+    {
+        "name": "Heilbronn",
+        "value": 270
+    },
+    {
+        "name": "Lahn_Dill_Kreis",
+        "value": 266
+    },
+    {
+        "name": "Reutlingen_Kreis",
+        "value": 261
+    },
+    {
+        "name": "Neuwied_Kreis",
+        "value": 261
+    },
+    {
+        "name": "Rems_Murr_Kreis",
+        "value": 259
+    },
+    {
+        "name": "Freising_Kreis",
+        "value": 254
+    },
+    {
+        "name": "Göppingen_Kreis",
+        "value": 254
+    },
+    {
+        "name": "Wismar",
+        "value": 253
+    },
+    {
+        "name": "Mühldorf_am_Inn_Kreis",
+        "value": 251
+    },
+    {
+        "name": "Aurich_Kreis",
+        "value": 250
+    },
+    {
+        "name": "Wesermarsch_Kreis",
+        "value": 248
+    },
+    {
+        "name": "Osterode_am_Harz_Kreis",
+        "value": 247
+    },
+    {
+        "name": "Cuxhaven_Kreis",
+        "value": 244
+    },
+    {
+        "name": "Elbe_Elster_Kreis",
+        "value": 237
+    },
+    {
+        "name": "Tübingen_Kreis",
+        "value": 234
+    },
+    {
+        "name": "Bayreuth",
+        "value": 233
+    },
+    {
+        "name": "Hamm",
+        "value": 233
+    },
+    {
+        "name": "Coesfeld_Kreis",
+        "value": 231
+    },
+    {
+        "name": "Kassel_Kreis",
+        "value": 230
+    },
+    {
+        "name": "Landshut",
+        "value": 230
+    },
+    {
+        "name": "Bodenseekreis",
+        "value": 229
+    },
+    {
+        "name": "Calw_Kreis",
+        "value": 228
+    },
+    {
+        "name": "Bad_Doberan_Kreis",
+        "value": 227
+    },
+    {
+        "name": "Osnabrück_Kreis",
+        "value": 227
+    },
+    {
+        "name": "Diepholz_Kreis",
+        "value": 225
+    },
+    {
+        "name": "Pfaffenhofen_an_der_Ilm_Kreis",
+        "value": 223
+    },
+    {
+        "name": "Landshut_Kreis",
+        "value": 221
+    },
+    {
+        "name": "Ostprignitz_Ruppin_Kreis",
+        "value": 219
+    },
+    {
+        "name": "Deggendorf_Kreis",
+        "value": 219
+    },
+    {
+        "name": "Aschaffenburg_Kreis",
+        "value": 218
+    },
+    {
+        "name": "Saarlouis_Kreis",
+        "value": 216
+    },
+    {
+        "name": "Nordfriesland_Kreis",
+        "value": 214
+    },
+    {
+        "name": "Rastatt_Kreis",
+        "value": 210
+    },
+    {
+        "name": "Saarpfalz_Kreis",
+        "value": 210
+    },
+    {
+        "name": "Suhl",
+        "value": 209
+    },
+    {
+        "name": "Gifhorn_Kreis",
+        "value": 208
+    },
+    {
+        "name": "Rügen_Kreis",
+        "value": 208
+    },
+    {
+        "name": "Uecker_Randow_Kreis",
+        "value": 207
+    },
+    {
+        "name": "Heidekreis",
+        "value": 204
+    },
+    {
+        "name": "Emsland_Kreis",
+        "value": 203
+    },
+    {
+        "name": "Saale_Holzland_Kreis",
+        "value": 203
+    },
+    {
+        "name": "Ostalbkreis",
+        "value": 199
+    },
+    {
+        "name": "Regensburg_Kreis",
+        "value": 197
+    },
+    {
+        "name": "Wolfenbüttel_Kreis",
+        "value": 196
+    },
+    {
+        "name": "Ulm",
+        "value": 196
+    },
+    {
+        "name": "Erlangen_Höchstadt_Kreis",
+        "value": 195
+    },
+    {
+        "name": "Hersfeld_Rotenburg_Kreis",
+        "value": 192
+    },
+    {
+        "name": "Baden_Baden",
+        "value": 191
+    },
+    {
+        "name": "Erding_Kreis",
+        "value": 191
+    },
+    {
+        "name": "Worms",
+        "value": 191
+    },
+    {
+        "name": "Schwäbisch_Hall_Kreis",
+        "value": 188
+    },
+    {
+        "name": "Werra_Meißner_Kreis",
+        "value": 188
+    },
+    {
+        "name": "Emden",
+        "value": 187
+    },
+    {
+        "name": "Schwarzwald_Baar_Kreis",
+        "value": 186
+    },
+    {
+        "name": "Passau_Kreis",
+        "value": 186
+    },
+    {
+        "name": "Breisgau_Hochschwarzwald_Kreis",
+        "value": 186
+    },
+    {
+        "name": "Delmenhorst",
+        "value": 185
+    },
+    {
+        "name": "Wartburgkreis",
+        "value": 185
+    },
+    {
+        "name": "Alb_Donau_Kreis",
+        "value": 185
+    },
+    {
+        "name": "Alzey_Worms_Kreis",
+        "value": 184
+    },
+    {
+        "name": "Unterallgäu_Kreis",
+        "value": 180
+    },
+    {
+        "name": "Pirmasens",
+        "value": 180
+    },
+    {
+        "name": "Parchim_Kreis",
+        "value": 177
+    },
+    {
+        "name": "Verden_Kreis",
+        "value": 177
+    },
+    {
+        "name": "Dithmarschen_Kreis",
+        "value": 177
+    },
+    {
+        "name": "Eichstätt_Kreis",
+        "value": 176
+    },
+    {
+        "name": "Höxter_Kreis",
+        "value": 176
+    },
+    {
+        "name": "Würzburg_Kreis",
+        "value": 173
+    },
+    {
+        "name": "Biberach_Kreis",
+        "value": 172
+    },
+    {
+        "name": "Peine_Kreis",
+        "value": 171
+    },
+    {
+        "name": "Germersheim_Kreis",
+        "value": 171
+    },
+    {
+        "name": "Freudenstadt_Kreis",
+        "value": 171
+    },
+    {
+        "name": "Vechta_Kreis",
+        "value": 171
+    },
+    {
+        "name": "Müritz_Kreis",
+        "value": 170
+    },
+    {
+        "name": "Prignitz_Kreis",
+        "value": 169
+    },
+    {
+        "name": "Rotenburg_Wümme_Kreis",
+        "value": 166
+    },
+    {
+        "name": "Leer_Kreis",
+        "value": 165
+    },
+    {
+        "name": "Ravensburg_Kreis",
+        "value": 165
+    },
+    {
+        "name": "Konstanz_Kreis",
+        "value": 163
+    },
+    {
+        "name": "Fürstenfeldbruck_Kreis",
+        "value": 161
+    },
+    {
+        "name": "Weimar",
+        "value": 159
+    },
+    {
+        "name": "Traunstein_Kreis",
+        "value": 156
+    },
+    {
+        "name": "Neuburg_Schrobenhausen_Kreis",
+        "value": 156
+    },
+    {
+        "name": "Neu_Ulm_Kreis",
+        "value": 154
+    },
+    {
+        "name": "Plön_Kreis",
+        "value": 153
+    },
+    {
+        "name": "Bad_Dürkheim_Kreis",
+        "value": 153
+    },
+    {
+        "name": "Dachau_Kreis",
+        "value": 153
+    },
+    {
+        "name": "Berchtesgadener_Land_Kreis",
+        "value": 150
+    },
+    {
+        "name": "Enzkreis",
+        "value": 149
+    },
+    {
+        "name": "Weimarer_Land_Kreis",
+        "value": 149
+    },
+    {
+        "name": "Demmin_Kreis",
+        "value": 147
+    },
+    {
+        "name": "Jena",
+        "value": 146
+    },
+    {
+        "name": "Trier_Saarburg_Kreis",
+        "value": 146
+    },
+    {
+        "name": "Hof",
+        "value": 145
+    },
+    {
+        "name": "Rhein_Pfalz_Kreis",
+        "value": 145
+    },
+    {
+        "name": "Kelheim_Kreis",
+        "value": 144
+    },
+    {
+        "name": "Ebersberg_Kreis",
+        "value": 144
+    },
+    {
+        "name": "Zollernalbkreis",
+        "value": 140
+    },
+    {
+        "name": "Uelzen_Kreis",
+        "value": 139
+    },
+    {
+        "name": "Bad_Kissingen_Kreis",
+        "value": 136
+    },
+    {
+        "name": "Osterholz_Kreis",
+        "value": 135
+    },
+    {
+        "name": "Bamberg",
+        "value": 134
+    },
+    {
+        "name": "Neustadt_an_der_Weinstraße",
+        "value": 133
+    },
+    {
+        "name": "Neunkirchen_Kreis",
+        "value": 130
+    },
+    {
+        "name": "Altenkirchen_Westerwald_Kreis",
+        "value": 130
+    },
+    {
+        "name": "Eichsfeld_Kreis",
+        "value": 129
+    },
+    {
+        "name": "Rottweil_Kreis",
+        "value": 128
+    },
+    {
+        "name": "Main_Tauber_Kreis",
+        "value": 128
+    },
+    {
+        "name": "Hohenlohekreis",
+        "value": 128
+    },
+    {
+        "name": "Heidenheim_Kreis",
+        "value": 127
+    },
+    {
+        "name": "Schwalm_Eder_Kreis",
+        "value": 126
+    },
+    {
+        "name": "Südliche_Weinstraße_Kreis",
+        "value": 125
+    },
+    {
+        "name": "Straubing",
+        "value": 122
+    },
+    {
+        "name": "Kyffhäuserkreis",
+        "value": 121
+    },
+    {
+        "name": "Landsberg_am_Lech_Kreis",
+        "value": 121
+    },
+    {
+        "name": "Neumarkt_in_der_Oberpfalz_Kreis",
+        "value": 118
+    },
+    {
+        "name": "Bad_Tölz_Wolfratshausen_Kreis",
+        "value": 117
+    },
+    {
+        "name": "Aichach_Friedberg_Kreis",
+        "value": 114
+    },
+    {
+        "name": "Fürth_Kreis",
+        "value": 112
+    },
+    {
+        "name": "Miltenberg_Kreis",
+        "value": 112
+    },
+    {
+        "name": "Coburg",
+        "value": 111
+    },
+    {
+        "name": "Ansbach_Kreis",
+        "value": 110
+    },
+    {
+        "name": "Birkenfeld_Kreis",
+        "value": 110
+    },
+    {
+        "name": "Oldenburg_Kreis",
+        "value": 109
+    },
+    {
+        "name": "Rhein_Hunsrück_Kreis",
+        "value": 109
+    },
+    {
+        "name": "Bitburg_Prüm_Kreis",
+        "value": 108
+    },
+    {
+        "name": "Nienburg_Weser_Kreis",
+        "value": 106
+    },
+    {
+        "name": "Forchheim_Kreis",
+        "value": 105
+    },
+    {
+        "name": "Freiburg_im_Breisgau",
+        "value": 105
+    },
+    {
+        "name": "Saalfeld_Rudolstadt_Kreis",
+        "value": 104
+    },
+    {
+        "name": "Kaiserslautern_Kreis",
+        "value": 103
+    },
+    {
+        "name": "Starnberg_Kreis",
+        "value": 103
+    },
+    {
+        "name": "Schwandorf_Kreis",
+        "value": 100
+    },
+    {
+        "name": "Nürnberger_Land_Kreis",
+        "value": 100
+    },
+    {
+        "name": "Frankenthal_Pfalz",
+        "value": 99
+    },
+    {
+        "name": "Hof_Kreis",
+        "value": 98
+    },
+    {
+        "name": "Miesbach_Kreis",
+        "value": 97
+    },
+    {
+        "name": "Bernkastel_Wittlich_Kreis",
+        "value": 96
+    },
+    {
+        "name": "Neckar_Odenwald_Kreis",
+        "value": 96
+    },
+    {
+        "name": "Olpe_Kreis",
+        "value": 95
+    },
+    {
+        "name": "Dingolfing_Landau_Kreis",
+        "value": 93
+    },
+    {
+        "name": "Coburg_Kreis",
+        "value": 92
+    },
+    {
+        "name": "Cloppenburg_Kreis",
+        "value": 91
+    },
+    {
+        "name": "Landau_in_der_Pfalz",
+        "value": 91
+    },
+    {
+        "name": "Ostallgäu_Kreis",
+        "value": 89
+    },
+    {
+        "name": "Lindau_Bodensee_Kreis",
+        "value": 88
+    },
+    {
+        "name": "Cham_Kreis",
+        "value": 88
+    },
+    {
+        "name": "Friesland_Kreis",
+        "value": 86
+    },
+    {
+        "name": "Rottal_Inn_Kreis",
+        "value": 86
+    },
+    {
+        "name": "Waldeck_Frankenberg_Kreis",
+        "value": 86
+    },
+    {
+        "name": "Dillingen_an_der_Donau_Kreis",
+        "value": 85
+    },
+    {
+        "name": "Donau_Ries_Kreis",
+        "value": 85
+    },
+    {
+        "name": "Tuttlingen_Kreis",
+        "value": 85
+    },
+    {
+        "name": "Vogelsbergkreis",
+        "value": 84
+    },
+    {
+        "name": "Zweibrücken",
+        "value": 83
+    },
+    {
+        "name": "Günzburg_Kreis",
+        "value": 83
+    },
+    {
+        "name": "Donnersbergkreis",
+        "value": 82
+    },
+    {
+        "name": "Sonneberg_Kreis",
+        "value": 80
+    },
+    {
+        "name": "Weilheim_Schongau_Kreis",
+        "value": 80
+    },
+    {
+        "name": "Merzig_Wadern_Kreis",
+        "value": 77
+    },
+    {
+        "name": "Amberg",
+        "value": 77
+    },
+    {
+        "name": "Kaufbeuren",
+        "value": 75
+    },
+    {
+        "name": "Grafschaft_Bentheim_Kreis",
+        "value": 74
+    },
+    {
+        "name": "Saale_Orla_Kreis",
+        "value": 74
+    },
+    {
+        "name": "Bayreuth_Kreis",
+        "value": 73
+    },
+    {
+        "name": "Main_Spessart_Kreis",
+        "value": 73
+    },
+    {
+        "name": "Garmisch_Partenkirchen_Kreis",
+        "value": 73
+    },
+    {
+        "name": "Rosenheim",
+        "value": 72
+    },
+    {
+        "name": "Oberallgäu_Kreis",
+        "value": 72
+    },
+    {
+        "name": "Kitzingen_Kreis",
+        "value": 72
+    },
+    {
+        "name": "Odenwaldkreis",
+        "value": 71
+    },
+    {
+        "name": "Regen_Kreis",
+        "value": 68
+    },
+    {
+        "name": "Straubing_Bogen_Kreis",
+        "value": 68
+    },
+    {
+        "name": "Emmendingen_Kreis",
+        "value": 66
+    },
+    {
+        "name": "Cochem_Zell_Kreis",
+        "value": 66
+    },
+    {
+        "name": "Sömmerda_Kreis",
+        "value": 65
+    },
+    {
+        "name": "Altötting_Kreis",
+        "value": 63
+    },
+    {
+        "name": "Wunsiedel_im_Fichtelgebirge_Kreis",
+        "value": 62
+    },
+    {
+        "name": "Ansbach",
+        "value": 62
+    },
+    {
+        "name": "Bamberg_Kreis",
+        "value": 62
+    },
+    {
+        "name": "Amberg_Sulzbach_Kreis",
+        "value": 62
+    },
+    {
+        "name": "Kulmbach_Kreis",
+        "value": 60
+    },
+    {
+        "name": "Hildburghausen_Kreis",
+        "value": 60
+    },
+    {
+        "name": "Roth_Kreis",
+        "value": 60
+    },
+    {
+        "name": "Kusel_Kreis",
+        "value": 57
+    },
+    {
+        "name": "Speyer",
+        "value": 56
+    },
+    {
+        "name": "Südwestpfalz_Kreis",
+        "value": 55
+    },
+    {
+        "name": "Wittmund_Kreis",
+        "value": 55
+    },
+    {
+        "name": "Lüchow_Dannenberg_Kreis",
+        "value": 54
+    },
+    {
+        "name": "Soltau_Fallingbostel_Kreis",
+        "value": 51
+    },
+    {
+        "name": "Kempten_Allgäu",
+        "value": 51
+    },
+    {
+        "name": "Tirschenreuth_Kreis",
+        "value": 51
+    },
+    {
+        "name": "Schweinfurt",
+        "value": 50
+    },
+    {
+        "name": "Sigmaringen_Kreis",
+        "value": 49
+    },
+    {
+        "name": "Weiden_in_der_Oberpfalz",
+        "value": 47
+    },
+    {
+        "name": "Sankt_Wendel_Kreis",
+        "value": 44
+    },
+    {
+        "name": "Vulkaneifel_Kreis",
+        "value": 41
+    },
+    {
+        "name": "Rhön_Grabfeld_Kreis",
+        "value": 39
+    },
+    {
+        "name": "Weißenburg_Gunzenhausen_Kreis",
+        "value": 39
+    },
+    {
+        "name": "Schweinfurt_Kreis",
+        "value": 35
+    },
+    {
+        "name": "Memmingen",
+        "value": 33
+    },
+    {
+        "name": "Schwabach",
+        "value": 33
+    },
+    {
+        "name": "Neustadt_a.d._Aisch_Bad_Windsheim_Kreis",
+        "value": 32
+    },
+    {
+        "name": "Lichtenfels_Kreis",
+        "value": 31
+    },
+    {
+        "name": "Freyung_Grafenau_Kreis",
+        "value": 30
+    },
+    {
+        "name": "Haßberge_Kreis",
+        "value": 23
+    },
+    {
+        "name": "Neustadt_a.d._Waldnaab_Kreis",
+        "value": 15
+    },
+    {
+        "name": "Kronach_Kreis",
+        "value": 12
+    }
+]
