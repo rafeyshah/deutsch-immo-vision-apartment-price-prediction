@@ -111,6 +111,7 @@ async def fetch_regio1():
         print("Hello")
         raise HTTPException(status_code=400, detail=str(e))
 
+
 @app.post("/predict")
 async def predict(request: PredictionRequest):
     # Convert request data to a DataFrame

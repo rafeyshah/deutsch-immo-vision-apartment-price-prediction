@@ -77,7 +77,7 @@ document.getElementById('predictionForm').addEventListener('submit', async (even
     payload.petsAllowed_yes = parseInt(document.getElementById('petsAllowed_yes').value) || 0;
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/predict', {
+        const response = await fetch('https://deutsch-immo-vision-apartment-price.onrender.com/predict', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -100,7 +100,7 @@ document.getElementById('predictionForm').addEventListener('submit', async (even
 // Fetch the hierarchy data from the API
 async function fetchHierarchyData() {
     try {
-        const response = await fetch('http://127.0.0.1:8000/hierarchy'); // Replace with the actual endpoint URL
+        const response = await fetch('https://deutsch-immo-vision-apartment-price.onrender.com/hierarchy'); // Replace with the actual endpoint URL
         const data = await response.json();
 
         populateStates(data.hierarchy);
