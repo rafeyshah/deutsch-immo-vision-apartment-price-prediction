@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Nordrhein_Westfalen",
+        "value": 58651
+    },
+    {
+        "name": "Sachsen",
+        "value": 55792
+    },
+    {
+        "name": "Sachsen_Anhalt",
+        "value": 19915
+    },
+    {
+        "name": "Bayern",
+        "value": 16192
+    },
+    {
+        "name": "Niedersachsen",
+        "value": 15721
+    },
+    {
+        "name": "Hessen",
+        "value": 13577
+    },
+    {
+        "name": "Baden_Württemberg",
+        "value": 12411
+    },
+    {
+        "name": "Thüringen",
+        "value": 8268
+    },
+    {
+        "name": "Rheinland_Pfalz",
+        "value": 7750
+    },
+    {
+        "name": "Berlin",
+        "value": 6672
+    },
+    {
+        "name": "Brandenburg",
+        "value": 6633
+    },
+    {
+        "name": "Mecklenburg_Vorpommern",
+        "value": 6481
+    },
+    {
+        "name": "Schleswig_Holstein",
+        "value": 6239
+    },
+    {
+        "name": "Bremen",
+        "value": 2774
+    },
+    {
+        "name": "Hamburg",
+        "value": 2319
+    },
+    {
+        "name": "Saarland",
+        "value": 1393
+    }
+]

@@ -18,11 +18,18 @@
             <!-- Basic Apartment Info -->
             <fieldset>
                 <legend>Basic Info</legend>
-                <label for="regio1">Region 1:</label>
-                <input type="number" id="regio1" required>
+                
+                <label for="regio1">States:</label>
+                <select id="regio1" required></select>
 
-                <label for="serviceCharge">Service Charge:</label>
-                <input type="number" id="serviceCharge" step="0.01" required>
+                <label for="regio2">Cities:</label>
+                <select id="regio2"></select>
+
+                <label for="regio3">Streets:</label>
+                <select id="regio3"></select>
+
+                <label for="hasKitchen">Has Kitchen (0 or 1):</label>
+                <input type="number" id="hasKitchen" min="0" max="1" value="0">
 
                 <label for="heatingType">Heating Type:</label>
                 <input type="number" id="heatingType" required>
@@ -32,6 +39,9 @@
 
                 <label for="balcony">Balcony (0 or 1):</label>
                 <input type="number" id="balcony" min="0" max="1" required>
+
+                <label for="serviceCharge">Service Charge:</label>
+                <input type="number" id="serviceCharge" step="0.01" required>
 
                 <label for="picturecount">Picture Count:</label>
                 <input type="number" id="picturecount" required>
@@ -117,15 +127,6 @@
 
                 <label for="livingSpaceRange">Living Space Range:</label>
                 <input type="number" id="livingSpaceRange" value="2">
-
-                <label for="regio2">Region 2:</label>
-                <input type="number" id="regio2">
-
-                <label for="regio3">Region 3:</label>
-                <input type="number" id="regio3">
-
-                <label for="hasKitchen">Has Kitchen (0 or 1):</label>
-                <input type="number" id="hasKitchen" min="0" max="1" value="0">
 
             </fieldset>
 

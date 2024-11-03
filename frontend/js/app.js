@@ -77,7 +77,7 @@ document.getElementById('predictionForm').addEventListener('submit', async (even
     payload.petsAllowed_yes = parseInt(document.getElementById('petsAllowed_yes').value) || 0;
 
     try {
-        const response = await fetch('https://deutsch-immo-vision-apartment-price.onrender.com/predict', {
+        const response = await fetch('http://127.0.0.1:8000/predict', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -96,3 +96,68 @@ document.getElementById('predictionForm').addEventListener('submit', async (even
         document.getElementById('result').innerHTML = `<p class="error">Error: ${error.message}</p>`;
     }
 });
+
+// Fetch the hierarchy data from the API
+async function fetchHierarchyData() {
+    try {
+        const response = await fetch('http://127.0.0.1:8000/hierarchy'); // Replace with the actual endpoint URL
+        const data = await response.json();
+
+        populateStates(data.hierarchy);
+    } catch (error) {
+        console.error("Failed to fetch hierarchy data:", error);
+    }
+}
+
+// Populate the states in regio1 dropdown
+function populateStates(data) {
+    const regio1Dropdown = document.getElementById('regio1');
+    regio1Dropdown.innerHTML = '<option value="">Select State</option>';
+
+    console.log("Data: ", data)
+    data.forEach(state => {
+        const option = document.createElement('option');
+        option.value = state.name;
+        option.text = state.name;
+        regio1Dropdown.appendChild(option);
+    });
+
+    regio1Dropdown.addEventListener('change', () => {
+        const selectedState = data.find(state => state.name === regio1Dropdown.value);
+        populateCities(selectedState);
+    });
+}
+
+// Populate cities based on selected state
+function populateCities(state) {
+    const regio2Dropdown = document.getElementById('regio2');
+    regio2Dropdown.innerHTML = '<option value="">Select City</option>';
+
+    state.cities.forEach(city => {
+        const option = document.createElement('option');
+        option.value = city.name;
+        option.text = city.name;
+        regio2Dropdown.appendChild(option);
+    });
+
+    regio2Dropdown.addEventListener('change', () => {
+        const selectedCity = state.cities.find(city => city.name === regio2Dropdown.value);
+        populateStreets(selectedCity);
+    });
+}
+
+// Populate streets based on selected city
+function populateStreets(city) {
+    const regio3Dropdown = document.getElementById('regio3');
+    regio3Dropdown.innerHTML = '<option value="">Select Street</option>';
+
+    city.streets.forEach(street => {
+        const option = document.createElement('option');
+        option.value = street.name;
+        option.text = street.name;
+        regio3Dropdown.appendChild(option);
+    });
+}
+
+// Call fetchHierarchyData on page load
+document.addEventListener('DOMContentLoaded', fetchHierarchyData);
