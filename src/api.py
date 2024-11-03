@@ -7,6 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import joblib
 import pandas as pd
 import os
+import json
 
 app = FastAPI()
 
@@ -92,6 +93,58 @@ async def read_root():
 
 frontend_path = os.path.join(os.path.dirname(__file__), "../frontend")
 app.mount("/frontend", StaticFiles(directory=frontend_path), name="frontend")
+
+
+@app.get("/states")
+async def fetch_regio1():
+    file_path = os.path.join(os.path.dirname(
+        __file__), '../data/regio/regio1.json')
+
+    try:
+        # Open and read the JSON file
+        with open(file_path, 'r') as file:
+            states = json.load(file)
+
+        # Print the data to verify
+        return {"states": states}
+
+    except Exception as e:
+        print("Hello")
+        raise HTTPException(status_code=400, detail=str(e))
+    
+@app.get("/cities")
+async def fetch_regio1():
+    file_path = os.path.join(os.path.dirname(
+        __file__), '../data/regio/regio2.json')
+
+    try:
+        # Open and read the JSON file
+        with open(file_path, 'r') as file:
+            cities = json.load(file)
+
+        # Print the data to verify
+        return {"cities": cities}
+
+    except Exception as e:
+        print("Hello")
+        raise HTTPException(status_code=400, detail=str(e))
+    
+@app.get("/streets")
+async def fetch_regio1():
+    file_path = os.path.join(os.path.dirname(
+        __file__), '../data/regio/regio3.json')
+
+    try:
+        # Open and read the JSON file
+        with open(file_path, 'r') as file:
+            streets = json.load(file)
+
+        # Print the data to verify
+        return {"streets": streets}
+
+    except Exception as e:
+        print("Hello")
+        raise HTTPException(status_code=400, detail=str(e))
 
 
 @app.post("/predict")
